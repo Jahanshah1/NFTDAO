@@ -29,5 +29,11 @@ Users can directly view details of an NFT collections through the native platfor
 ### ERC20 smart contract deployed using NeonEVM
 <img width="1234" alt="NFTDAOtoken deployed on neon" src="https://user-images.githubusercontent.com/92823408/180609461-7782b450-b723-4fce-ae44-48c2c8dc73df.PNG">
 
-
+## Tech Stack used 
+- NeonEVM
+- BlockDaemon API
+- Javascript
+- Typescript
+- Solidity
+- OpenZeppelin
 
