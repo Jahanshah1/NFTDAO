@@ -17,6 +17,11 @@ This projects consists of two smart contracts written in Solidity NFTDAOtoken an
 Users can directly view details of an NFT collections through the native platform's home page where they can view price action, floor-price, attributes, rarity, volume and other details of a collection. Any user can pass a proposal to buy NFT(s). The voting duration will be 5 days long and if there are more than 75% of investors in favour then the proposal will pass. 
 
 ## Screenshots & Preview 
+
+### Initial Wireframe for the front-end platform 
+![Untitled](https://user-images.githubusercontent.com/92823408/181214115-5af08f2a-edcf-497c-9f07-75cc00bae1e7.png)
+
+
 ### Features of the ERC20 token smart contract 
 <img width="235" alt="features of token" src="https://user-images.githubusercontent.com/92823408/180609384-dd7c35cb-5f2f-40d9-9269-51e89b5302eb.PNG">
 
