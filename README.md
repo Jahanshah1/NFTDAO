@@ -30,12 +30,13 @@ Users can directly view details of an NFT collections through the native platfor
 
 ### Governance smart contract deployed on Celo Alfajores Testnet
 <img width="1496" alt="NFTDAO governance explorer SS" src="https://user-images.githubusercontent.com/92823408/181185497-33e2fe59-3558-4a9f-8dfe-7d3df5c96798.PNG">
-
+link : https://alfajores-blockscout.celo-testnet.org/address/0xe442f72B802BBcF7b3ec7b90278BecC2Fc46985c/transactions
 
 
 
 ### ERC20 smart contract deployed on Celo Alfajores Testnet
 <img width="1495" alt="NFTDAO token explorer ss" src="https://user-images.githubusercontent.com/92823408/181185594-f92dfac6-94df-49fa-8b90-5b4395fd8525.PNG">
+link : https://alfajores-blockscout.celo-testnet.org/address/0x25648830919D2D1c505B0b6a53CD52c88faabD9d/transactions
 
 
 ## Tech Stack used 
