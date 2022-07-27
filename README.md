@@ -23,17 +23,16 @@ Users can directly view details of an NFT collections through the native platfor
 ### Features of the governance smart contract 
 <img width="231" alt="Features of governance" src="https://user-images.githubusercontent.com/92823408/180609401-2a36c59c-ad56-4bff-a0d4-872a6d28fee9.PNG">
 
-### Governance smart contract deployed using NeonEVM
-<img width="1263" alt="NFTDAO contract deployed neon" src="https://user-images.githubusercontent.com/92823408/180609421-bb21acc6-310f-4e6e-9ac0-e49f7d31d045.PNG">
+### Governance smart contract deployed on Celo Alfajores Testnet
+<img width="1496" alt="NFTDAO governance explorer SS" src="https://user-images.githubusercontent.com/92823408/181185497-33e2fe59-3558-4a9f-8dfe-7d3df5c96798.PNG">
 
-### ERC20 smart contract deployed using NeonEVM
-<img width="1234" alt="NFTDAOtoken deployed on neon" src="https://user-images.githubusercontent.com/92823408/180609461-7782b450-b723-4fce-ae44-48c2c8dc73df.PNG">
+
+
+
+### ERC20 smart contract deployed on Celo Alfajores Testnet
+<img width="1495" alt="NFTDAO token explorer ss" src="https://user-images.githubusercontent.com/92823408/181185594-f92dfac6-94df-49fa-8b90-5b4395fd8525.PNG">
+
 
 ## Tech Stack used 
-- NeonEVM
-- BlockDaemon API
-- Javascript
-- Typescript
-- Solidity
-- OpenZeppelin
-
+- Celo 
+- 
