@@ -34,5 +34,9 @@ Users can directly view details of an NFT collections through the native platfor
 
 
 ## Tech Stack used 
-- Celo 
-- 
+- Celo plugin
+- Solidity 
+- Openzeppelin 
+- React.js
+- Javscript 
+- Typescript 
