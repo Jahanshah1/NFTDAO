@@ -3,8 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import Web3 from "web3/dist/web3.min.js";
-import Web3Provider from 'web3-react'
-
+import { Web3ReactProvider } from "@web3-react/core";
 
 function getLibrary(provider) {
   const library = new Web3(provider);
