@@ -1,3 +1,4 @@
+import { useWeb3React } from "@web3-react/core";
 import React, { useEffect, useState } from "react";
 import {
   Button,
@@ -9,20 +10,35 @@ import {
   Input,
   Modal,
 } from "semantic-ui-react";
+import Web3 from "web3/dist/web3.min.js";
+
 
 import getNFTs from "../services/tatum";
 
 const HomePage = () => {
+  const web3 = new Web3();
   const [nftData, setNftData] = useState([]);
   const [selectedNFT, setSelectedNFT] = useState();
   const [loading, setLoading] = useState(true);
+  const { library } = useWeb3React();
+  const [contract, setContract] = React.useState(
+    "0xc4ea80deCA2415105746639eC16cB0cF8378996A"
+  );
+
+
+  // useEffect(() => {
+  // }, []);
 
   useEffect(() => {
-    getNFTs("0x9f46B8290A6D41B28dA037aDE0C3eBe24a5D1160").then((data) => {
-      setNftData(data);
-      setLoading(false);
-    });
-  }, []);
+    console.log("useEffect", library);
+    if (web3.utils.isAddress(contract) && contract != "") {
+      setLoading(true);
+      getNFTs(contract).then((data) => {
+        setNftData(data);
+        setLoading(false);
+      });
+    }
+  }, [contract]);
 
   return (
     <div>
@@ -37,6 +53,15 @@ const HomePage = () => {
           placeholder="Search..."
           size="massive"
           loading={loading}
+          error={
+            web3.utils.isAddress(contract)
+              ? false
+              : {
+                  content: "Please enter a valid contract address",
+                  pointing: "below",
+                }
+          }
+          onChange={(e, { value }) => setContract(value)}
         />
       </Container>
       <br />
@@ -94,9 +119,9 @@ const HomePage = () => {
             />
             <Modal.Description>
               {selectedNFT.metadata.metadata.description}
-              <br/>
-              <br/>
-              <br/>
+              <br />
+              <br />
+              <br />
               <p>Would you like to create proposal to buy this NFT?</p>
             </Modal.Description>
           </Modal.Content>
