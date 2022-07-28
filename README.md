@@ -2,7 +2,7 @@
 A self governing platform where people can vote and buy fractions of NFTs 
 
 ## Purpose/the problem it solves
-There are many expensive NFTs with great utility but people are unable to invest due to high floor price and many times due to enormous amount of existing projects people are unable to identify an opportunity hence this DAO will essentially help people own fraction of NFT by having a common treasury for investors and find new opportunities by passing new proposals, investing and essentially self governing.
+There are many expensive NFTs with great utility but people are unable to invest due to high floor price and many times due to enormous amount of existing projects people are unable to identify an opportunity hence this DAO will help people own fraction of NFT by having a common treasury for investors and find new opportunities by passing new proposals, investing and essentially self governing.
 
 ## Overview 
 This projects consists of two smart contracts written in Solidity NFTDAOtoken and NFTDAO, NFTDAOtoken is an ERC20 token which will be used for voting on the DAO and NFTDAO is the governance contract featuring passing proposals and voting. 
@@ -29,13 +29,11 @@ Users can directly view details of an NFT collections through the native platfor
 <img width="231" alt="Features of governance" src="https://user-images.githubusercontent.com/92823408/180609401-2a36c59c-ad56-4bff-a0d4-872a6d28fee9.PNG">
 
 ### Governance smart contract deployed on Celo Alfajores Testnet
-<img width="1496" alt="NFTDAO governance explorer SS" src="https://user-images.githubusercontent.com/92823408/181185497-33e2fe59-3558-4a9f-8dfe-7d3df5c96798.PNG">
 link : https://alfajores-blockscout.celo-testnet.org/address/0xe442f72B802BBcF7b3ec7b90278BecC2Fc46985c/transactions
 
 
 
 ### ERC20 smart contract deployed on Celo Alfajores Testnet
-<img width="1495" alt="NFTDAO token explorer ss" src="https://user-images.githubusercontent.com/92823408/181185594-f92dfac6-94df-49fa-8b90-5b4395fd8525.PNG">
 link : https://alfajores-blockscout.celo-testnet.org/address/0x25648830919D2D1c505B0b6a53CD52c88faabD9d/transactions
 
 
@@ -46,3 +44,22 @@ link : https://alfajores-blockscout.celo-testnet.org/address/0x25648830919D2D1c5
 - React.js
 - Javscript 
 - Typescript 
+- Tatum API
+
+## Run locally 
+Clone the project 
+```bash 
+git clone https://github.com/Jahanshah1/NFTDAO
+```
+Go to client directory 
+```bash 
+cd client
+```
+Install dependencies 
+```bash 
+npm i 
+```
+start localhost 
+```bash 
+npm start
+```
