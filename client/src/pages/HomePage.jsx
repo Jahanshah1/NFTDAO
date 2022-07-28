@@ -11,8 +11,8 @@ import {
   Modal,
 } from "semantic-ui-react";
 import Web3 from "web3/dist/web3.min.js";
-
-
+import Governence from "../abi/Governence.json";
+import connector from "../services/connector";
 import getNFTs from "../services/tatum";
 
 const HomePage = () => {
@@ -20,25 +20,62 @@ const HomePage = () => {
   const [nftData, setNftData] = useState([]);
   const [selectedNFT, setSelectedNFT] = useState();
   const [loading, setLoading] = useState(true);
-  const { library } = useWeb3React();
-  const [contract, setContract] = React.useState(
+  const [contract, setContract] = useState();
+  const { active, library, account, activate } = useWeb3React();
+  const [query, setQuery] = React.useState(
     "0xc4ea80deCA2415105746639eC16cB0cF8378996A"
   );
 
+  const GOVERNENCE_ADDRESS = "0xe442f72b802bbcf7b3ec7b90278becc2fc46985c";
 
-  // useEffect(() => {
-  // }, []);
+  useEffect(() => {
+    if (active) {
+      const res = new library.eth.Contract(Governence, GOVERNENCE_ADDRESS);
+      setContract(res);
+    }
+  }, [active]);
 
   useEffect(() => {
     console.log("useEffect", library);
-    if (web3.utils.isAddress(contract) && contract != "") {
+    if (web3.utils.isAddress(query) && query != "") {
       setLoading(true);
-      getNFTs(contract).then((data) => {
+      getNFTs(query).then((data) => {
         setNftData(data);
         setLoading(false);
       });
     }
-  }, [contract]);
+  }, [query]);
+
+  const handlePropose = async () => {
+    if (!active) activate(connector);
+    setSelectedNFT(null);
+    // const functionalData = library.eth.abi.encodeFunctionCall(
+    //   {
+    //     name: "transferFrom",
+    //     type: "function",
+    //     inputs: [
+    //       {
+    //         type: "address",
+    //         name: "myNumber",
+    //       },
+    //       {
+    //         type: "uint256",
+    //         name: "myString",
+    //       },
+    //     ],
+    //   },
+    //   ["2345675643", "Hello!%"]
+    // );
+    const data = await contract.methods
+      .propose(
+        ["0xe442f72B802BBcF7b3ec7b90278BecC2Fc46985c"],
+        [0],
+        ["0xf"],
+        "TEST Proposal #1"
+      )
+      .send({ from: account, gas: "35000000" });
+    console.log(data);
+  };
 
   return (
     <div>
@@ -54,14 +91,14 @@ const HomePage = () => {
           size="massive"
           loading={loading}
           error={
-            web3.utils.isAddress(contract)
+            web3.utils.isAddress(query)
               ? false
               : {
                   content: "Please enter a valid contract address",
                   pointing: "below",
                 }
           }
-          onChange={(e, { value }) => setContract(value)}
+          onChange={(e, { value }) => setQuery(value)}
         />
       </Container>
       <br />
@@ -127,8 +164,8 @@ const HomePage = () => {
           </Modal.Content>
           <Modal.Actions>
             <Button onClick={() => setSelectedNFT(null)}>Cancel</Button>
-            <Button onClick={() => setSelectedNFT(null)} positive>
-              Ok
+            <Button onClick={handlePropose} positive>
+              Propose
             </Button>
           </Modal.Actions>
         </Modal>

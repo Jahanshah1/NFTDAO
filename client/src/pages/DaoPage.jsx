@@ -1,7 +1,19 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Button, Container, Header, Segment } from "semantic-ui-react";
-
+import { useWeb3React } from "@web3-react/core";
+import Governence from "../abi/Governence.json";
 function DaoPage() {
+  const GOVERNENCE_ADDRESS = "0xe442f72b802bbcf7b3ec7b90278becc2fc46985c";
+  const [contract, setContract] = useState();
+  const { active, library, account, activate } = useWeb3React();
+  useEffect(() => {
+    if (active) {
+      const res = new library.eth.Contract(Governence, GOVERNENCE_ADDRESS);
+      setContract(res);
+    }
+  }, [active]);
+
+
   return (
     <div>
       <Container text style={{ paddingTop: "7em" }}>
