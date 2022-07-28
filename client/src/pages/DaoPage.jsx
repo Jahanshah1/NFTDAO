@@ -39,20 +39,13 @@ function DaoPage() {
         </Header>
         <Segment color="purple">
           <Header as="h4" textAlign="left">
-            Buy BAYC
+            Buy DAOPOLIS citizen 
           </Header>
           <table>
             <tr>
               <td>
                 <p style={{ textAlign: "left",}}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  DAOPOLIS citizen NFT collection is initialising great utility at the moment and introducing a new staking system for their ecosystem.
                 </p>
               </td>
               <td>
@@ -72,14 +65,7 @@ function DaoPage() {
             <tr>
               <td>
                 <p style={{ textAlign: "left",}}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  Due to current market conditions BAYC seems to have gone down in price a bit, seems like a perfect opportunity to sweep some nfts off the floor.
                 </p>
               </td>
               <td>
