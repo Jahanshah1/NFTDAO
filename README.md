@@ -44,3 +44,4 @@ link : https://alfajores-blockscout.celo-testnet.org/address/0x25648830919D2D1c5
 - React.js
 - Javscript 
 - Typescript 
+- Tatum API
