@@ -36,6 +36,9 @@ link : https://alfajores-blockscout.celo-testnet.org/address/0xe442f72B802BBcF7b
 ### ERC20 smart contract deployed on Celo Alfajores Testnet
 link : https://alfajores-blockscout.celo-testnet.org/address/0x25648830919D2D1c505B0b6a53CD52c88faabD9d/transactions
 
+### Demo link ( vid )
+https://youtu.be/tvyhJXkAqd0
+
 
 ## Tech Stack used 
 - Celo plugin
