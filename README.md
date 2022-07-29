@@ -66,4 +66,13 @@ start localhost
 ```bash 
 npm start
 ```
-If there are any problems refer to https://github.com/Jahanshah1/NFTDAO/blob/main/troubleshoot.md
+If there are any problems please refer to https://github.com/Jahanshah1/NFTDAO/blob/main/troubleshoot.md
+
+## Future plans 1.0
+- [x] Add NFTs on CELO for selection 
+- [x] Add Proposals 
+- [x] Create Native ERC20 token
+- [ ] Fix bugs and glitches in UI
+- [ ] Improve UI
+- [ ] Add multi-chain compatibility 
+   
