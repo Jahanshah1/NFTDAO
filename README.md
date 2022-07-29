@@ -66,3 +66,4 @@ start localhost
 ```bash 
 npm start
 ```
+If there are any problems refer to https://github.com/Jahanshah1/NFTDAO/blob/main/troubleshoot.md
