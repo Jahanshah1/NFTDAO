@@ -66,7 +66,8 @@ start localhost
 ```bash 
 npm start
 ```
-If there are any problems please refer to https://github.com/Jahanshah1/NFTDAO/blob/main/troubleshoot.md
+If there are any problems please refer to https://github.com/Jahanshah1/NFTDAO/blob/main/troubleshoot.md 
+Or contact me shahjahanrajan@gmail.com
 
 ## Future plans 1.0
 - [x] Add NFTs on CELO for selection 
